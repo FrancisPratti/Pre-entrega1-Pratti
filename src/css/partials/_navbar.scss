@@ -1,0 +1,51 @@
+@import "./variables";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #710000;
+    padding: 1rem 1.5rem;
+    h1 {
+        font-family: $headfont;
+        color: #EEBA0B;
+        font-size: 2rem;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+      
+        li {
+            list-style: none;
+            font-family: $headfont;
+            font-size: 1.2rem;
+            a {
+                text-decoration: none;
+                color: #EEBA0B;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+    
+}
+.carrito {
+    display: flex;
+    gap: 0.3rem;
+    color: #EEBA0B;
+    font-size: 1.3rem;
+
+    &:hover {
+        background-color: #EEBA0B;
+        color: #710000;
+        padding: 0.2rem;
+        border-radius: 10%;
+    }
+}
