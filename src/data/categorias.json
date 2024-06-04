@@ -1,0 +1,14 @@
+[
+    {
+        "id": "libros",
+        "nombre": "Libros"
+    },
+    {
+        "id": "comics",
+        "nombre": "Comics"
+    },
+    {
+        "id": "manuales",
+        "nombre": "Manuales"
+    }
+]

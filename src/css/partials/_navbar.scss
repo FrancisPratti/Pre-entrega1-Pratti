@@ -3,23 +3,35 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #710000;
-    padding: 1rem 1.5rem;
-    h1 {
-        font-family: $headfont;
-        color: #EEBA0B;
-        font-size: 2rem;
-        font-weight: 900;
-        text-decoration: underline;
+    justify-content:space-between;
+    background-color: #1F0503;
+    padding: .3rem 1.5rem;
+
+    div {
+        display: flex;
+        align-items: center;
+
+
+        h1 {
+            font-family: $headfont;
+            color: #EEBA0B;
+            font-size: 2rem;
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        img {
+            max-width: 13%;
+            max-height: auto;
+        } 
     }
+
     ul {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
 
       
-        li {
+        .nav-item {
             list-style: none;
             font-family: $headfont;
             font-size: 1.2rem;

@@ -1,17 +1,34 @@
 import { CartWidget } from "./CartWidget"
-
+import categories from "../data/categorias.json"
+import { NavLink } from "react-router-dom"
 
 export const NavBar = () => {
   return (
     <header>
-        <h1>La Biblioteca del Goblin</h1>
+        <NavLink to="/">
+          <div>
+          <img src="/assets/img/logo.png" alt="" />
+          <h1>Biblioteca del Goblin</h1>
+          </div>
+          
+        </NavLink>
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <ul>
+            <li className="nav-item">
+              <NavLink to="/" activeclassname="active" className="nav-link">Inicio</NavLink>
+            </li>
+            {
+              categories.map((category) => {
+                  return (
+                    <li className="nav-item" key={category.id}>
+                      <NavLink to={`/category/${category.id}`} activeclassname="active" className="nav-link">
+                        {category.nombre}
+                      </NavLink>
+                    </li>
+                  )
+              })
+            }
+        </ul>
         </nav>
         <CartWidget/>
     </header>

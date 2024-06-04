@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "nombre": "La Llamada de Cthulhu",
+      "precio": "21.000",
+      "descripcion": "“La llamada de Cthulhu” y otros cuentos es una selección que se encarga de presentar algunos de los mejores relatos de horror cósmico del célebre autor H. P. Lovecraft. Es una cita obligatoria para los amantes del misterio y las novelas de horror, pues no es de extrañar que los protagonistas de estos relatos acaben por enloquecer cuando les son revelados los secretos que esconde este vasto universo.",
+      "imagen": "/assets/img/products/Cthulhu.jpg",
+      "autor": "H.P. Lovecraft",
+      "categoria": {
+        "id": "libros",
+        "nombre": "Libros"
+      }
+    },
+    {
+        "id": 2,
+        "nombre": "Legion",
+        "precio": "10.000",
+        "descripcion": "Llueve sangre sobre la ciudad de Buenos Aires. El cielo se abre para vomitar demonios. Son la Legión; son la muerte y la destrucción; arquitectos infernales que construyen una desmesurada torre hecha restos humanos sobre el horizonte urbano. ¿Por qué vinieron? ¿Qué quieren? Nadie lo sabe. Sólo Felix, el guitarrista de una banda de barrio, tiene la clave para averiguarlo.",
+        "imagen": "/assets/img/products/Legion.jpg",
+        "autor": "Salvador Sanz",
+        "categoria": {
+          "id": "comics",
+          "nombre": "Comics"
+        }
+    },
+    {
+        "id": 3,
+        "nombre": "Manual de jugador de D&D",
+        "precio": "30.000",
+        "descripcion": "Crea personajes heroicos para el juego de rol mas importante del mundo.El Players Handbook es el libro de referencia esencial para todos los jugadores de Dungeons & Dragons. Este manual incluye reglas de creacion y desarrollo de personajes, trasfondos y habilidades, exploracion y combate, equipo, conjuros y mucho mas.",
+        "imagen": "/assets/img/products/ManualDyD.jpg",
+        "autor": "Wizards of the Coast",
+        "categoria": {
+          "id": "manuales",
+          "nombre": "Manuales"
+        }
+    },
+    {
+      "id": 4,
+      "nombre": "Coleccion J.R.R. Tolkien",
+      "precio": "70.000",
+      "descripcion": "El Estuche Tolkien es la colección definitiva de la obra de J.R.R. Tolkien, el autor de El Hobbit y El Señor de los Anillos. Incluye los cuatro libros de la saga de El Señor de los Anillos, así como un mapa de la Tierra Media.",
+      "imagen": "/assets/img/products/Tolkien.jpg",
+      "autor": "J.R.R. Tolkien",
+      "categoria": {
+        "id": "libros",
+        "nombre": "Libros"
+      }
+  },
+  {
+    "id": 5,
+    "nombre": "Mega",
+    "precio": "11.000",
+    "descripcion": "Una criatura monstruosa se abre camino desde el Polo Sur hasta llegar a Montevideo, la cual arrasa escupiendo magma ardiente de su boca. Los medios la apodan “La Salamandra”, y al parecer el único ser en el planeta que puede apagar ese espantoso fuego descansa en las profundidades del océano. Su nombre es “Mega”, y a menos que alguien descubra cómo despertarlo, todo estará perdido...",
+    "imagen": "/assets/img/products/mega.jpg",
+    "autor": "Salvador Sanz",
+    "categoria": {
+      "id": "comics",
+      "nombre": "Comics"
+    }
+  },
+  {
+      "id": 6,
+      "nombre": "Manual de Monstruos",
+      "precio": "24.000",
+      "descripcion": "Llená tus aventuras de peligro con 150 criaturas icónicas ilustradas a todo color en este Manual de Monstruos del juego más popular del mundo. Un libro que todo Dungeon Master debe tener, clave para tanto aquellos que planeen meticulosamente meses de campaña como para aquellos que dejen fluir y vayan improvisando las sesiones. ¡Uno nunca puede tener demasiados monstruos bajo la manga!",
+      "imagen": "/assets/img/products/ManualMonstruos.jpg",
+      "autor": "Wizards of the Coast",
+      "categoria": {
+        "id": "manuales",
+        "nombre": "Manuales"
+      }
+  },
+  {
+    "id": 7,
+    "nombre": "Assassin's Creed Renaissance",
+    "precio": "16.000",
+    "descripcion": "Traicionado por las familias que gobiernan Florencia, Venecia y Roma en la Italia del Renacimiento, el joven Ezio Auditore se embarca en una épica lucha por erradicar la corrupción y restaurar el honor de su familia. Para ello deberá aprender el arte de la muerte. Assassin's Creed: Renaissance es una novela basada en el videojuego de 2009 Assassin's Creed II",
+    "imagen": "/assets/img/products/ACRenaissance.jpg",
+    "autor": "Oliver Bowden",
+    "categoria": {
+      "id": "libros",
+      "nombre": "Libros"
+    }
+},
+{
+  "id": 8,
+  "nombre": "Vox Machina Origenes",
+  "precio": "18.000",
+  "descripcion": "Vox Machina disfruta de una semana de lujos en Westruun e incluso del festival del Cénit del Invierno. Pero eso cuesta dinero y este tiene la mala costumbre de terminarse, así que se apuntan a un ring de lucha clandestino para hacerse con su premio a golpes. Esto termina siendo apenas un calentamiento para el peligro real, cuando un misterioso ataque se cierne sobre la celebración del festival, congelando mágicamente a toda la ciudad. Vox Machina tendrá que salir al rescate de nuevo, contra un enemigo mucho más grande de lo que imaginaban...",
+  "imagen": "/assets/img/products/VoxMachina.jpg",
+  "autor": "Critical Role",
+  "categoria": {
+    "id": "comics",
+    "nombre": "Comics"
+  }
+},
+  {
+    "id": 9,
+    "nombre": "Manual de Dungeon Master",
+    "precio": "28.000",
+    "descripcion": "Todo lo que un Dungeon Master necesita para narrar historias legendarias del juego de rol más jugado del mundo, la Guía del Dungeon Master te proporciona la inspiración y dirección necesarias para encender la chispa de tu imaginación y crear mundos de aventura que tus jugadores exploren y disfruten. Dentro vas a encontrar herramientas para la construcción de mundos, trucos y consejos para crear aventuras, cientos de objetos mágicos clásicos de D&D y mucho más.",
+    "imagen": "/assets/img/products/ManualDM.jpg",
+    "autor": "Wizards of the Coast",
+    "categoria": {
+      "id": "manuales",
+      "nombre": "Manuales"
+    }
+}
+]
+  

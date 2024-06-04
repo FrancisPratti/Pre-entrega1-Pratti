@@ -1,0 +1,43 @@
+.det-back {
+    background-image: url(../../../public/assets/img/background.jpg);
+    padding: 1rem;
+    min-height: 100vh;
+    
+    .det-box {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 7rem;
+        gap: 1.5rem;
+        justify-content:center;
+        border: solid 3px black;
+        border-radius: .5rem;
+        padding-block: 2.3rem ;
+        background-color: rgba(0, 0, 0, 0.64);
+        color: white;
+
+
+        img {
+            max-width: 25%;
+            max-height: auto;
+        }
+
+        .detalles {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 500px;
+            
+            h3{
+                font-size: 1.8rem;
+                text-decoration: underline;
+                font-family: $headfont;
+            }
+
+            p{
+                font-size: 1.4rem;
+            }
+            
+        }
+    }
+
+}

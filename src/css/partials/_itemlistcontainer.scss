@@ -1,6 +1,86 @@
 .item-list {
-    background-color: #C36F09;
-    display: grid;
-    place-items: center;
+    // background-color: #715c17;
+    background-image: url(/public/assets/img/background.jpg);
+    align-items: center;
     min-height: 90vh;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+    .title {
+        font-size: 1.5rem;
+        font-family: $headfont;
+        margin-bottom: 0.5rem;
+        text-decoration: underline;
+        background-color: rgba(0, 0, 0, 0.64);
+        color: white;
+        border-radius: .5rem;
+        padding: .5rem;
+
+        
+    }
+
+    .productos-grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        
+        
+        .producto {
+            background-color: rgba(0, 0, 0, 0.64);
+            max-height: fit-content;
+            padding: .8rem;
+            display: flex;
+            flex-direction: column;    
+            border-radius: .5rem;
+            gap: .5rem;
+            align-items: left;
+            border-color: white;
+            border-width: 5px;
+            color: white;
+
+
+            h2 {
+                font-family: $headfont;
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: 1.5fr 2fr;
+                gap: .8rem;
+                justify-content: space-between;
+                
+                img {
+                object-fit: scale-down;
+                max-width: 100%;
+                opacity: 1;
+                
+
+                }
+                
+                .info {
+                    display: flex;
+                    flex-direction: column;   
+                    justify-content: space-between;
+                    gap: .5rem;
+                }
+                .boton {
+                    padding: .5rem;
+                    max-width: max-content;
+                    align-self: auto;
+
+                    .ver {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            
+            }
+        }
+    }
+    
+ 
 }
