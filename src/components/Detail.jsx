@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../context/CartContext.jsx'
 
-export const Detail = ({ nombre, precio, imagen, descripcion, autor }) => {
+
+export const Detail = ({ producto, nombre, precio, imagen, descripcion, autor }) => {
+
+  const {agregarAlCarrito } = useContext (CartContext)
+  
   return (
     <div className='det-back'>
         <div className='det-box'>
@@ -10,6 +15,7 @@ export const Detail = ({ nombre, precio, imagen, descripcion, autor }) => {
                     <p>{descripcion}</p>
                     <p>Autor:{autor}</p>
                     <p>Precio: ${precio}</p>  
+                    <button onClick={() => agregarAlCarrito(producto)}>Añadir al carrito</button>
                 </div>
         </div>
     </div>
