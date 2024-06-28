@@ -1,0 +1,39 @@
+.check {
+    width: 100%;
+    background-image: url(/public/assets/img/background.jpg);
+    height: 82.5vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding-top: 4rem;
+    .check-info {
+        background-color: rgba(0, 0, 0, 0.64);
+        color: white;
+        padding: 1.5rem 2.5rem;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+
+        h2 {
+            font-size: 1.5rem;
+        }
+        img {
+            width: 420px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+
+            .boton {
+                width: 150px;
+                align-self: center;
+                padding: .6rem .2rem;
+            }
+        }
+    }
+
+}
