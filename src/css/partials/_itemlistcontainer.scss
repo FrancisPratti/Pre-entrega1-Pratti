@@ -2,7 +2,7 @@
     // background-color: #715c17;
     background-image: url(/public/assets/img/background.jpg);
     align-items: center;
-    min-height: 90vh;
+    min-height: 85vh;
     padding-inline: 1.5rem;
     padding-block: 1rem;
     justify-content: center;
@@ -26,13 +26,12 @@
     .productos-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
         
         
         .producto {
             background-color: rgba(0, 0, 0, 0.64);
-            max-height: fit-content;
-            padding: .8rem;
+            padding: .7rem;
             display: flex;
             flex-direction: column;    
             border-radius: .5rem;
@@ -41,46 +40,48 @@
             border-color: white;
             border-width: 5px;
             color: white;
-
-
-            h2 {
-                font-family: $headfont;
-            }
-
-            div {
-                display: grid;
-                grid-template-columns: 1.5fr 2fr;
-                gap: .8rem;
-                justify-content: space-between;
-                
-                img {
+            width: 280px;
+            height: auto;
+ 
+            img {
                 object-fit: scale-down;
                 max-width: 100%;
                 opacity: 1;
+                height: 300px;
                 
 
+            }
+                
+            .info {
+                display: flex;
+                flex-direction: column;   
+                justify-content: space-between;
+                gap: .2rem;
+                padding-inline: 1.2rem;
+                height: 120px;
+
+                h2 {
+                    font-family: $headfont;
+                    font-size: .9rem;
                 }
                 
-                .info {
+                .botones {
+
                     display: flex;
-                    flex-direction: column;   
-                    justify-content: space-between;
-                    gap: .5rem;
-                }
-                .boton {
-                    padding: .5rem;
-                    max-width: max-content;
-                    align-self: auto;
+                    gap: 1rem;
 
-                    .ver {
-                        text-decoration: none;
-                        color: black;
+                    .boton {
+                        padding: .5rem;
+                         max-width: max-content;
+                        align-self: auto;
+        
+                        .ver {
+                            text-decoration: none;
+                            color: black;
+                        }
                     }
                 }
-            
+            }
             }
         }
     }
-    
- 
-}

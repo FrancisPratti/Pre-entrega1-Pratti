@@ -7,7 +7,7 @@ import { doc, getDoc } from "firebase/firestore";
 const ItemDetailContainer = () => {
 
     let { itemId } = useParams();
-    let [producto, setProducto] = useState(undefined);
+    let [producto, setProducto] = useState();
     let [loading, setLoading] = useState(true);
 
 
@@ -27,7 +27,8 @@ const ItemDetailContainer = () => {
     if (loading) {
       return <div>Cargando...</div>
     } else if (producto) {
-      return <Detail 
+      return <Detail
+          producto={producto} 
           nombre={producto.nombre}
           imagen={producto.imagen}
           precio={producto.precio}

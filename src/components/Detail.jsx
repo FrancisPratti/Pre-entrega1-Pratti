@@ -3,7 +3,7 @@ import { CartContext } from '../context/CartContext.jsx'
 
 
 export const Detail = ({ producto, nombre, precio, imagen, descripcion, autor }) => {
-
+  console.log (producto);
   const {agregarAlCarrito } = useContext (CartContext)
   
   return (

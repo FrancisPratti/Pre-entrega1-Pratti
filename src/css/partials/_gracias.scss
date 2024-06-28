@@ -1,0 +1,23 @@
+.tnx {
+    width: 100%;
+    background-image: url(/public/assets/img/background.jpg);
+    height: 82.5vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding-top: 4rem;
+
+    .tnx-card {
+        background-color: black;
+        color: white;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+
+        img {
+            width: 550px;
+        }
+    }
+}

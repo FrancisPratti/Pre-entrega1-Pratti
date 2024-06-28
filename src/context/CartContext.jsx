@@ -2,37 +2,57 @@ import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
-export const CartProvider = ({children}) => {
+export const CartProvider = ({ children }) => {
+  const [carrito, setCarrito] = useState([]);
 
-    const [carrito, setCarrito] = useState([]);
-    
-    const agregarAlCarrito = (producto) => {
-      setCarrito([producto, ...carrito]);
-      console.log (carrito);
+  useEffect(() => {
+    const carritoGuardado = JSON.parse(localStorage.getItem('carrito'));
+    if (carritoGuardado) {
+      setCarrito(carritoGuardado);
     }
-  
-    const calcularCantidad = () => {
-      return carrito.length;
-    }
-  
-    const calcularTotal = () => {
-      return carrito.reduce((acc, prod) => acc + prod.precio, 0).toFixed(2);
-    }
-  
-    const vaciarCarrito = () => {
-      setCarrito([]);
-    }
-  
-    const eliminarProducto = (producto) => {
-      const productoEncontrado = carrito.find(prod => prod.id === producto.id);
-      const indice = carrito.indexOf(productoEncontrado);
-      
-      setCarrito(carrito.filter(prod => prod.id !== producto.id));
-    }
+  }, []);
 
-    return (
-        <CartContext.Provider value={ { carrito, setCarrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto } }>
-            {children}
-        </CartContext.Provider>
-    )
+  const agregarAlCarrito = (producto) => {
+    const nuevoCarrito = [...carrito, producto];
+    setCarrito(nuevoCarrito);
+    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+  }
+
+  const calcularCantidad = () => {
+    return carrito.length;
+  }
+
+  const calcularTotal = () => {
+    return carrito.reduce((acc, prod) => acc + prod.precio, 0);
+  }
+
+  const vaciarCarrito = () => {
+    setCarrito([]);
+    localStorage.removeItem('carrito');
+  }
+
+  const eliminarProducto = (producto) => {
+    const nuevoCarrito = carrito.filter(prod => prod.id !== producto.id);
+    setCarrito(nuevoCarrito);
+    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+  }
+
+  const eliminarProductoPorCantidad = (producto, cantidad) => {
+    let contador = 0;
+    const nuevoCarrito = carrito.filter(prod => {
+      if (prod.id === producto.id && contador < cantidad) {
+        contador++;
+        return false;
+      }
+      return true;
+    });
+    setCarrito(nuevoCarrito);
+    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+  }
+
+  return (
+    <CartContext.Provider value={{ carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto, eliminarProductoPorCantidad }}>
+      {children}
+    </CartContext.Provider>
+  );
 }
